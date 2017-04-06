@@ -1,1 +1,0 @@
-{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"gvisMotionChart(Modal)","line_number":0},{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"cbind(data[, vars.pos], data[, -vars.pos])","line_number":0}],"message":"Error in data[, vars.pos] : 維度數目不正確\n"}

@@ -54,9 +54,9 @@
     <!-- comment -->
 
 <ol>
-<li>Introduction</li>
-<li>Lexicology with the BIG DATA</li>
-<li>Measuring Lexical Aging as an Example</li>
+<li>Background</li>
+<li>Social Media and Corpus Linguistics</li>
+<li>Challenges</li>
 <li>Conclusion</li>
 </ol>
 
@@ -68,9 +68,9 @@
     <!--  ========================================================   -->
 
 <ol>
-<li><strong><code>Introduction</code></strong></li>
-<li>Lexicology with the BIG DATA</li>
-<li>Measuring Lexical Aging as an Example</li>
+<li><strong><code>Background</code></strong></li>
+<li>Social Media and Corpus Linguistics</li>
+<li>Challenges</li>
 <li>Conclusion</li>
 </ol>
 
@@ -105,7 +105,7 @@
 </section>
 <section class="slide " id="slide-6">
   <div>
-    <h2>Corpus.Linguistics</h2>
+    <h2>Corpus.Linguistics: Definition</h2>
     <p>Long-established definition/applications of corpus</p>
 
 <blockquote>
@@ -143,10 +143,8 @@
 </section>
 <section class="slide " id="slide-9">
   <div>
-    <h2>語料庫怎麼被使用的 (II) 具面</h2>
-    <h3>Raw corpus with naive annotation</h3>
-
-<ul>
+    <h2>Corpus.Linguistics: Tools</h2>
+    <ul>
 <li>工具不是萬能，沒有工具萬萬不能。
 <img src="images/tool.jpg" alt="Drawing" style="width: 400px;"/></li>
 </ul>
@@ -156,14 +154,14 @@
 <section class="slide " id="slide-10">
   <div>
     <h2>請放下語言學家的尊嚴</h2>
-    <p><img src="images/canyou.jpg" alt="Drawing" style="width: 400px;"/></p>
+    <p><img src="images/canyou.jpg" alt="Drawing" style="width: 300px;"/></p>
 
   </div>
 </section>
 <section class="slide " id="slide-11">
   <div>
     <h2>Corpus Tools</h2>
-    <h3>Concordance</h3>
+    <h3>Concordance (是怎麼玩壞語料庫語言學的)</h3>
 
 <p><img src="images/copens.png" alt="Drawing" style="width: 400px;"/></p>
 
@@ -190,56 +188,17 @@
     <h2>Corpus tools + Data Science</h2>
     <h3>Profile, Dashboard, visualization</h3>
 
+<p><img src="images/dashboard.png" alt="Drawing" style="width: 500px;"/></p>
+
   </div>
 </section>
 <section class="slide " id="slide-15">
   <div>
-    <h2>Corpus Tools Visualization</h2>
-     
-<div class='row-fluid'>
-  <div class='span5'>
-    <form id="knitForm15" data-cell="15">
-      <h3>motion chart for dynamic visualization of language change</h3>
+    <h2>Corpus Tools + Data Visualization</h2>
+    <h3>motion chart for dynamic visualization of language change</h3>
 
-<pre><code class="r">#require(googleVis)
-#load(&quot;~/academic_activities/talks and tutorials/2013/ntnu/mot/mot.RData&quot;)
-#head(convdata)
-#head(compdata)
-#Modal &lt;- gvisMotionChart(convdata, idvar=&quot;VERB&quot;, timeva=&quot;DECADE&quot;) 
-#print(Modal, tag =&#39;chart&#39;)
-#gvisMotionChart(Modal) 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6LUjgHPhxRw" frameborder="0" allowfullscreen></iframe>
 
-#M1 &lt;- gvisMotionChart(Fruits, idvar=&quot;Fruit&quot;, timevar=&quot;Year&quot;)
-#plot(M1)
-</code></pre>
-
-      <div id='aceeditor15' style="height:px;"></div>
-      <div class='interactive btn-toolbar pull-left'>
-        <div class='btn-group'>
-          <a class='btn btn-small action-button' id='runCode15' data-action='runCode'
-            data-cell='15' rel='tooltip' data-title='Run Code'>
-            <i class='icon-play'></i>
-          </a>
-          <a class='btn btn-small iBtn' id='testCode15' data-action='testCode'
-             data-cell='15' rel='tooltip' data-title='Test Code'>
-            <i class='icon-check'></i>
-          </a>
-          <a class='btn btn-small iBtn' id='clearResult15' data-action='clearResult'
-             data-cell='15' rel='tooltip' data-title='Clear Output'>
-            <i class="icon-remove"></i>
-          </a>
-          <a class='btn  btn-small iBtn' id='getHint15' rel='tooltip' 
-            data-title="Get Hint" data-action='getHint'
-            data-cell='15' data-hint="">
-            <i class="icon-bookmark"></i>
-          </a>
-        </div>
-      </div>    </form>
-  </div>
-  <div class='span7'>
-    <iframe id="knitResult15" class='shiny-html-output'></iframe>
-  </div>
-</div>
   </div>
 </section>
 <section class="slide " id="slide-16">
@@ -256,6 +215,16 @@
 </section>
 <section class="slide " id="slide-17">
   <div>
+    <h2>Corpus Tools: Summary</h2>
+    <ul>
+<li><code>query</code>, <code>extraction</code>, <code>statistics</code>, <code>visualization</code></li>
+<li><strong>Exploratory Data Analysis</strong> ?</li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-18">
+  <div>
     <h2>Summary of main limitations</h2>
     <p>(Candlin and Hall, 2012)</p>
 
@@ -267,9 +236,20 @@
 
 <p>Stubbs illustrates how inter-collocations of the verbs ACCOST and LURK examined in the Cobuild corpus build up a network showing common ways of talking about threats to public safety, especially in the mass media (p. 205): Accosted – in the street – by a stranger – lurk beneath the surface – hidden beneath the surface – danger – warning</p>
 
+<h2>Outline</h2>
+
+<!--  ========================================================   -->
+
+<ol>
+<li>Background</li>
+<li><strong><code>Social Media and Corpus Linguistics</code></strong></li>
+<li>Challenges</li>
+<li>Conclusion</li>
+</ol>
+
   </div>
 </section>
-<section class="slide " id="slide-18">
+<section class="slide " id="slide-19">
   <div>
     <h2>How social media is changing Language/Corpus linguistics/NLP</h2>
     <ul>
@@ -281,90 +261,134 @@
 
   </div>
 </section>
-<section class="slide " id="slide-19">
-  <div>
-    <h2>PTT corpus as Social Sensor in Taiwan</h2>
-    <p><img src="images/pttcorpus.png" alt="Drawing" style="width: 500px;"/></p>
-
-  </div>
-</section>
 <section class="slide " id="slide-20">
   <div>
-    <h2>PTT</h2>
-    <p><img src="images/spiderling2.jpg" alt="Drawing" style="width: 500px;"/></p>
+    <h2>Corpus as Social Sensor in Taiwan: Plurk</h2>
+    <p><img src="images/plurk2.png" alt="Drawing" style="width: 500px;"/></p>
 
   </div>
 </section>
 <section class="slide " id="slide-21">
   <div>
-    <h2>Challenges</h2>
-    <p>Sentiment and self expression</p>
-
-<ul>
-<li>comp.seg</li>
-<li>annotation/anno.lopotator/markus</li>
-<li><p>social and historical <strong>de-contextualized</strong></p>
-
-<blockquote>
-<p>A corpus presents decontextualised language data divorced from its original context. (Aston 1995; Widdowson 1998)</p>
-</blockquote></li>
-</ul>
+    <h2>Corpus as Social Sensor in Taiwan: Plurk</h2>
+    <p><img src="images/plurk-web.jpg" alt="Drawing" style="width: 500px;"/></p>
 
   </div>
 </section>
 <section class="slide " id="slide-22">
   <div>
-    <h2>Chinese Word Segmentation and Big (noisy) Data</h2>
-    
+    <h2>Corpus as Social Sensor in Taiwan: PTT</h2>
+    <p><img src="images/ptt.png" alt="Drawing" style="width: 500px;"/></p>
+
+<p><a href="http://lopen.linguistics.ntu.edu.tw/pttcorp">http://lopen.linguistics.ntu.edu.tw/pttcorp</a></p>
+
   </div>
 </section>
 <section class="slide " id="slide-23">
   <div>
-    <h2>Plurk rare words</h2>
-    
+    <h2>PTT dynamic crawler</h2>
+    <p><img src="images/spiderling2.jpg" alt="Drawing" style="width: 500px;"/></p>
+
   </div>
 </section>
 <section class="slide " id="slide-24">
   <div>
-    <h2>Wacky Wacky WaA</h2>
-    <p><img src="images/wac.jpeg" alt="Drawing" style="width: 500px;"/>
-<img src="images/wac2.jpg" alt="Drawing" style="width: 500px;"/></p>
+    <h2>Outline</h2>
+    <!--  ========================================================   -->
+
+<ol>
+<li>Background</li>
+<li>Social Media and Corpus Linguistics</li>
+<li><strong><code>Challenges</code></strong></li>
+<li>Conclusion</li>
+</ol>
 
   </div>
 </section>
 <section class="slide " id="slide-25">
   <div>
-    <h2>CWS.PIPE AND MWE</h2>
-    <p>lexical bundles (Mike&#39;s paper.accepted)
-QIEs
-fragments</p>
+    <h2>Challenges</h2>
+    <ul>
+<li>Word segmentation </li>
+<li>Multi-level annotation</li>
+<li>Social and historical <strong>de-contextualized</strong></li>
+</ul>
+
+<blockquote>
+<p>A corpus presents decontextualised language data divorced from its original context. (Aston 1995; Widdowson 1998)</p>
+</blockquote>
 
   </div>
 </section>
 <section class="slide " id="slide-26">
   <div>
-    <h2>CompSeg</h2>
-    <p><img src="images/segComp.png" alt="Drawing" style="width: 600px;"/>
-<a href="http://lopen.linguistics.ntu.edu.tw/diffseg/">http://lopen.linguistics.ntu.edu.tw/diffseg/</a></p>
+    <h2>WaC is in</h2>
+    <p><img src="images/wac.jpeg" alt="Drawing" style="width: 500px;"/>
+<img src="images/wac2.jpg" alt="Drawing" style="width: 500px;"/></p>
 
   </div>
 </section>
 <section class="slide " id="slide-27">
   <div>
-    <h2>Developing Linguistic Annotation for Machine Learning Algorithms</h2>
-    <ul>
-<li>Now is the Golden Age of Text Analysis</li>
-</ul>
+    <h2>Why Chinese WaC is Wacky</h2>
+    <h3>Frequency Spectrum (Hsieh, 2013)</h3>
+
+<p><img src="images/freqspec.png" alt="Drawing" style="width: 480px;"/></p>
 
   </div>
 </section>
 <section class="slide " id="slide-28">
   <div>
+    <h2>Why Chinese WaC is Wacky</h2>
+    <h3>Vocabulary Growth Curve (Hsieh, 2013)</h3>
+
+<p><img src="images/vgc.png" alt="Drawing" style="width: 480px;"/></p>
+
+  </div>
+</section>
+<section class="slide " id="slide-29">
+  <div>
+    <h2>Even Manual check is not that easy</h2>
+    <p>(<code>plurk_word_list</code>: 朱學(Na)恆(D))</p>
+
+  </div>
+</section>
+<section class="slide " id="slide-30">
+  <div>
+    <h2>更有語言學味道的議題</h2>
+    <ul>
+<li>Lexical bundles (Hus and Hsieh, 2017)</li>
+<li>QIEs</li>
+<li>Fragments</li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-31">
+  <div>
+    <h2>還沒講到漢語語言變異</h2>
+    <p><img src="images/segComp.png" alt="Drawing" style="width: 600px;"/>
+<a href="http://lopen.linguistics.ntu.edu.tw/diffseg/">http://lopen.linguistics.ntu.edu.tw/diffseg/</a></p>
+
+  </div>
+</section>
+<section class="slide " id="slide-32">
+  <div>
+    <h2>Developing Linguistic Annotation for Machine Learning Algorithms</h2>
+    <ul>
+<li>Now is the Golden Age of Text Analysis
+<img src="images/dsr2016-17.png" alt="Drawing" style="width: 400px;"/></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-33">
+  <div>
     <h2>Annotation</h2>
     
   </div>
 </section>
-<section class="slide " id="slide-29">
+<section class="slide " id="slide-34">
   <div>
     <h2>anno.solution</h2>
     <ul>
@@ -380,7 +404,7 @@ fragments</p>
 
   </div>
 </section>
-<section class="slide " id="slide-30">
+<section class="slide " id="slide-35">
   <div>
     <h2>Annotation</h2>
     <ul>
@@ -394,43 +418,43 @@ fragments</p>
 
   </div>
 </section>
-<section class="slide " id="slide-31">
+<section class="slide " id="slide-36">
   <div>
     <h2>Lopotator</h2>
-    <p><img src="images/dsr2016-17.png" alt="Drawing" style="width: 400px;"/></p>
+    <p><img src="images/lopotator.png" alt="Drawing" style="width: 500px;"/></p>
 
   </div>
 </section>
-<section class="slide " id="slide-32">
+<section class="slide " id="slide-37">
   <div>
-    <h2>NLP.TEXT ANALYTICS</h2>
-    <p><img src="images/dsr2016-17.png" alt="Drawing" style="width: 400px;"/></p>
+    <h2>語料庫還能怎樣？本體知識融入</h2>
+    <p><img src="images/cwn.png" alt="Drawing" style="width: 400px;"/></p>
 
   </div>
 </section>
-<section class="slide " id="slide-33">
+<section class="slide " id="slide-38">
   <div>
-    <h2>Depression detection in texts</h2>
-    
+    <h2>語料庫還能怎樣？常識規整</h2>
+    <p><img src="images/book_conceptnet5.png" alt="Drawing" style="width: 400px;"/></p>
+
+<iframe width="520" height="415" src="assets/widgets/nn.html" frameborder="0" allowfullscreen></iframe>
+  
+
   </div>
 </section>
-<section class="slide " id="slide-34">
-  <div>
-    <h2>語料庫還能怎樣？</h2>
-    
-  </div>
-</section>
-<section class="slide " id="slide-35">
+<section class="slide " id="slide-39">
   <div>
     <h2>社會性與歷史性</h2>
     <ul>
-<li>social network and lexical network</li>
+<li>social network and lexical network (and brain network)</li>
 <li>diachronic word embeddings</li>
 </ul>
 
+<p><img src="images/embeddings.png" alt="Drawing" style="width: 600px;"/></p>
+
   </div>
 </section>
-<section class="slide " id="slide-36">
+<section class="slide " id="slide-40">
   <div>
     <h2>社會</h2>
     <h3>言談的舞蹈與音樂性</h3>
@@ -443,7 +467,7 @@ fragments</p>
 
   </div>
 </section>
-<section class="slide " id="slide-37">
+<section class="slide " id="slide-41">
   <div>
     <h2>From Corpus to Knowledge</h2>
     <ul>
@@ -459,135 +483,64 @@ fragments</p>
 
   </div>
 </section>
-<section class="slide " id="slide-38">
+<section class="slide " id="slide-42">
   <div>
-    <h2>語意網路與語意距離</h2>
-    <p>Lexical Network and Brain Network</p>
-
-<iframe width="520" height="415" src="assets/widgets/nn.html" frameborder="0" allowfullscreen></iframe>
+    <h2>Diachronic character/word embeddings</h2>
+    <iframe width="800" height="515" src="http://140.112.147.121:8288" frameborder="0" allowfullscreen></iframe>
   
 
 <hr>
 
-<h2>自我表達的歷時語意距離計算模擬（神經網路）</h2>
+<h2>Outline</h2>
 
-<iframe width="800" height="515" src="http://140.112.147.121:8288" frameborder="0" allowfullscreen></iframe>
-  
+<!--  ========================================================   -->
 
-  </div>
-</section>
-<section class="slide " id="slide-39">
-  <div>
-    <h2>實驗：刺激材料</h2>
-    <p><img src="images/stimulus.png" alt="Drawing" style="width: 700px;"/></p>
-
-<pre><code>## Warning in file(file, &quot;rt&quot;, encoding = fileEncoding): 無法開啟檔案
-## &#39;merged.comp.csv&#39; ：No such file or directory
-</code></pre>
-
-<pre><code>## Error in file(file, &quot;rt&quot;, encoding = fileEncoding): 無法開啟連結
-</code></pre>
-
-<pre><code>## Warning in file(file, &quot;rt&quot;, encoding = fileEncoding): 無法開啟檔案
-## &#39;merged.freq.csv&#39; ：No such file or directory
-</code></pre>
-
-<pre><code>## Error in file(file, &quot;rt&quot;, encoding = fileEncoding): 無法開啟連結
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): 沒有這個函數 &quot;tbl_df&quot;
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): 找不到物件 &#39;mcomp.tbl&#39;
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): 沒有這個函數 &quot;tbl_df&quot;
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): 找不到物件 &#39;mfreq.tbl&#39;
-</code></pre>
-
-<pre><code>## Error in apply(mcomp[3:ncol(mcomp)], 1, mean): 找不到物件 &#39;mcomp&#39;
-</code></pre>
-
-<pre><code>## Error in apply(mcomp[3:ncol(mcomp)], 1, sd): 找不到物件 &#39;mcomp&#39;
-</code></pre>
-
-<pre><code>## Error in apply(mfreq[3:ncol(mfreq)], 1, mean): 找不到物件 &#39;mfreq&#39;
-</code></pre>
-
-<pre><code>## Error in apply(mfreq[3:ncol(mfreq)], 1, sd): 找不到物件 &#39;mfreq&#39;
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): 沒有這個函數 &quot;select&quot;
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): 沒有這個函數 &quot;select&quot;
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): 沒有這個函數 &quot;full_join&quot;
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): 沒有這個函數 &quot;%&gt;%&quot;
-</code></pre>
+<ol>
+<li>Background</li>
+<li>Social Media and Corpus Linguistics</li>
+<li>Challenges</li>
+<li><strong><code>Conclusion</code></strong></li>
+</ol>
 
   </div>
 </section>
-<section class="slide " id="slide-40">
+<section class="slide " id="slide-43">
   <div>
-    <h2>實驗：Questionnaire</h2>
-    <p><img src="images/question.png" alt="Drawing" style="width: 700px;"/></p>
-
-<hr>
-
-<h2>實驗：Ratings analysis</h2>
-
-<iframe width="520" height="415" src="assets/widgets/wp.html" frameborder="0" allowfullscreen></iframe>
-  
-
-<hr>
-
-<h2>實驗：Ratings analysis (diverging stacked bar charts)</h2>
-
-<p><img src="images/oc.png" alt="Drawing" style="width: 400px;"/>
-<img src="images/od.png" alt="Drawing" style="width: 400px;"/></p>
-
-  </div>
-</section>
-<section class="slide " id="slide-41">
-  <div>
-    <h2>Conclusion</h2>
+    <h2>My two cents</h2>
     <blockquote>
 <p>This is a good time to become a corpus linguist.</p>
 </blockquote>
 
 <ul>
+<li>Reinventing education of linguistics</li>
 <li>Corpus as Social Sensor </li>
 <li>大智移雲時代脈絡下的語料庫創新</li>
 </ul>
 
   </div>
 </section>
-<section class="slide " id="slide-42">
+<section class="slide " id="slide-44">
   <div>
     <h2>Chatbot 終將一統江湖？</h2>
     <p><img src="images/symbol.png" alt="Drawing" style="width: 400px;"/></p>
 
   </div>
 </section>
-<section class="slide " id="slide-43">
+<section class="slide " id="slide-45">
   <div>
     <h2>Thank you</h2>
     <p><img src="images/thanks.png" alt="Drawing" style="width: 400px;"/></p>
 
   </div>
 </section>
-<section class="slide " id="slide-44">
+<section class="slide " id="slide-46">
   <div>
     <h2>Reference</h2>
-    <p>[1] J. Pannebaker. 2011. The secret life of pronouns: what our words say about us. Bloomsbury Press.
-[2] Candlin and Hall (eds.) 2012. Corpora and language education. Lynne Flowerdew.
-[3] Wang S.H. (2017) Text Analysis of Corpus Linguistics in a Post-concordancer Era. In: Wu TT., Gennari R., Huang YM., Xie H., Cao Y. (eds) Emerging Technologies for Education. SETE 2016. Lecture Notes in Computer Science, vol 10108. Springer. </p>
+    <p>[1] J. Pannebaker. 2011. The secret life of pronouns: what our words say about us. Bloomsbury Press.</p>
+
+<p>[2] Candlin and Hall (eds.) 2012. Corpora and language education. Lynne Flowerdew.</p>
+
+<p>[3] Wang S.H. (2017) Text Analysis of Corpus Linguistics in a Post-concordancer Era. In: Wu TT., Gennari R., Huang YM., Xie H., Cao Y. (eds) Emerging Technologies for Education. SETE 2016. Lecture Notes in Computer Science, vol 10108. Springer. </p>
 
   </div>
 </section>
