@@ -1,0 +1,449 @@
+---
+title       : 2017 National Taiwan Normal University
+author      : 謝舒凱
+job         : GIL, National Taiwan University
+framework   : shower        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [quiz, shiny, interactive, mathjax]  # {bootstrap}
+ext_widgets : {rCharts: [libraries/widgets/nvd3]}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+
+
+
+#--- .cover #Cover
+
+
+--- .cover .w #FitToWidth
+# `Corpus as Social Sensor`
+# `語料庫作為社會感知接收器`
+
+![cover](images/logo_lope.jpg)
+
+`[國立台灣大學語言學研究所] 謝舒凱`
+
+---
+## Outline
+<!-- comment -->
+1. Background
+2. Lexicology with the BIG DATA
+3. Measuring Lexical Aging as an Example
+4. Conclusion
+
+
+--- bg:#FFFAF0
+
+## Outline
+<!--  ========================================================   -->
+1. __`Background`__
+2. Lexicology with the BIG DATA
+3. Measuring Lexical Aging as an Example
+4. Conclusion
+
+
+---
+## 時代背景
+
+sensor, social sensor in the networked age
+<img src="images/sensor.jpeg" alt="Drawing" style="width: 200px;"/>
+- Revisiting the definition of corpus (Become fully electronic in 1989)
+
+
+---
+## History of Corpus Linguistics 不再有趣的辯論
+
+- Chomskyan linguistics and corpus linguistics: Introspection and intuition vs attested instances of authentic language
+
+<img src="images/chomsky.png" alt="Drawing" style="width: 800px;"/>
+
+- Text archive/Database, Corpus, and the Web (aka. Google as Corpus)
+
+
+---
+## Corpus.Linguistics
+
+Long-established definition/applications of corpus
+
+> as a collection of authentic (naturally occurring) language, either written or spoken, which has been compiled *for a particular purpose*.(Sinclair 1991, Stubbs 1996, Hunston 2002)
+
+---
+## Corpus.Linguistics: 有事嗎
+
+<img src="images/cor.design.png" alt="Drawing" style="width: 800px;"/>
+(Candlin and Hall (eds.) 2012)
+
+
+---
+## Corpus.Linguistics: Methodology
+
+- corpus-based, corpus-driven, ...
+- appropriate corpus size, representativeness, (genre) balance
+  - Brown corpus 220,000; BYC
+  - (Biber 1990): 
+   
+> Sinclair (1991, 2004a) emphasises that a corpus should be large and that it ‘typically contains many millions of words’ such that the more likely it is to give an adequate representation of the language and suf- ficiently multiple occurrences of the items under investigation. In a similar vein, Sampson (2001: 6) states the need for a ‘sizeable sample of real-life usage’ to ensure there exists adequate evidence for generating or testing hypotheses about the language.
+
+
+---
+## 語料庫怎麼被使用的 (II) 具面
+### Raw corpus with naive annotation
+
+- 工具不是萬能，沒有工具萬萬不能。
+<img src="images/tool.jpg" alt="Drawing" style="width: 400px;"/>
+
+
+
+---
+## 請放下語言學家的尊嚴
+
+
+<img src="images/canyou.jpg" alt="Drawing" style="width: 300px;"/>
+
+
+
+---
+## Corpus Tools 
+### Concordance
+<img src="images/copens.png" alt="Drawing" style="width: 400px;"/>
+
+
+---
+## Corpus Tools 
+### word and ngram frequency
+
+
+
+
+---
+## Corpus Tools 
+### colligation and collocation (network)
+(`GraphColl`, Brezina et. al. 2015)
+
+
+---
+## Corpus tools + Data Science
+### Profile, Dashboard, visualization
+
+
+
+--- &interactive
+## Corpus Tools Visualization
+### motion chart for dynamic visualization of language change
+
+
+```{r opts.label = 'interactive', results = 'asis'}
+#require(googleVis)
+#load("~/academic_activities/talks and tutorials/2013/ntnu/mot/mot.RData")
+#head(convdata)
+#head(compdata)
+#Modal <- gvisMotionChart(convdata, idvar="VERB", timeva="DECADE") 
+#print(Modal, tag ='chart')
+#gvisMotionChart(Modal) 
+
+#M1 <- gvisMotionChart(Fruits, idvar="Fruit", timevar="Year")
+#plot(M1)
+
+
+```
+
+
+
+---
+## Corpus Tools + Natural Language Processing
+
+Corpus Linguistics in a Post-concordancer Era [Wang, 2017].
+
+- it ignores the sentence boundaries in texts and, as a result, the researchers miss the opportunities to automatically analyze the texts at sentence level; 
+- the tool also provides little information about the syntactic functions of the words in the corpora, which can be revealed through more recent tools such as Stanford parsers (http://nlp.stanford.edu:8080/parser/) and SyntaxNet. 
+
+
+---
+## Summary of main limitations
+(Candlin and Hall, 2012)
+
+- Corpora can never be fully representative as they are delimited by size
+- A corpus presents decontextualised language data divorced from its original context. (Aston 1995; Widdowson 1998)
+- due to these technological restrictions, corpus investigations over-emphasise single word forms and collocations at the expense of more discourse-based features of language.
+
+
+Stubbs illustrates how inter-collocations of the verbs ACCOST and LURK examined in the Cobuild corpus build up a network showing common ways of talking about threats to public safety, especially in the mass media (p. 205): Accosted – in the street – by a stranger – lurk beneath the surface – hidden beneath the surface – danger – warning
+
+
+
+
+
+
+---
+## How social media is changing Language/Corpus linguistics/NLP
+
+- fragment > MWE
+- streaming big > seg myth / gobal statistics illusion
+
+<img src="images/socialmedia.png" alt="Drawing" style="width: 500px;"/>
+
+
+---
+## PTT corpus as Social Sensor in Taiwan
+
+<img src="images/pttcorpus.png" alt="Drawing" style="width: 500px;"/>
+
+
+---
+## PTT 
+
+<img src="images/spiderling2.jpg" alt="Drawing" style="width: 500px;"/>
+
+
+
+---
+## Challenges
+
+Sentiment and self expression
+
+- comp.seg
+- annotation/anno.lopotator/markus
+- social and historical **de-contextualized**
+  
+  > A corpus presents decontextualised language data divorced from its original context. (Aston 1995; Widdowson 1998)
+
+---
+## Chinese Word Segmentation and Big (noisy) Data
+
+
+
+---
+## Plurk rare words
+
+
+
+
+---
+## Wacky Wacky WaA
+
+<img src="images/wac.jpeg" alt="Drawing" style="width: 500px;"/>
+<img src="images/wac2.jpg" alt="Drawing" style="width: 500px;"/>
+
+
+---
+## CWS.PIPE AND MWE
+
+lexical bundles (Mike's paper.accepted)
+QIEs
+fragments
+
+
+
+---
+## CompSeg
+
+
+<img src="images/segComp.png" alt="Drawing" style="width: 600px;"/>
+http://lopen.linguistics.ntu.edu.tw/diffseg/
+
+---
+## Developing Linguistic Annotation for Machine Learning Algorithms
+- Now is the Golden Age of Text Analysis
+
+
+---
+## Annotation
+
+
+---
+## anno.solution
+
+- Associating a label (metadata) with specific content in a document.
+- Annotation can be everywhere: 
+  - Image labeling
+  - Sarcasticm
+  - Event 
+
+
+---
+## Annotation
+- annotated corpus needs to be consistent to 
+  - train/test an algorithm
+  - gain solid insights 
+
+
+---
+## Lopotator
+
+<img src="images/dsr2016-17.png" alt="Drawing" style="width: 400px;"/>
+
+
+---
+## NLP.TEXT ANALYTICS
+
+<img src="images/dsr2016-17.png" alt="Drawing" style="width: 400px;"/>
+
+
+
+---
+## Depression detection in texts
+
+
+---
+## 語料庫還能怎樣？
+
+
+
+---
+## 社會性與歷史性
+- social network and lexical network
+- diachronic word embeddings
+
+
+
+
+---
+## 社會
+### 言談的舞蹈與音樂性
+
+> How can we know the dancer from the dance” (William Butler Yeats)
+
+verbal mimicking
+
+
+
+
+
+
+---
+## From Corpus to Knowledge
+- Korpus: Knowledge-yielding corpus
+  - Combining paradigmatic resources (WordNet)
+  - lexico-grammatical pattern acquisition
+
+<img src="images/corpus4fun.png" alt="Drawing" style="width: 600px;"/>
+
+
+
+
+
+---
+## 語意網路與語意距離
+Lexical Network and Brain Network
+
+<iframe width="520" height="415" src="assets/widgets/nn.html" frameborder="0" allowfullscreen></iframe>
+  
+  
+---
+## 自我表達的歷時語意距離計算模擬（神經網路）
+  
+<iframe width="800" height="515" src="http://140.112.147.121:8288" frameborder="0" allowfullscreen></iframe>
+  
+  
+
+
+
+---
+## 實驗：刺激材料
+  
+<img src="images/stimulus.png" alt="Drawing" style="width: 700px;"/>
+  
+  
+```{r, echo=FALSE, results='hide'}
+
+# ratings.a <- read.csv("~/Dropbox/心智科學腦影像計畫子計畫3/實驗.程式.資料/scripts.report/ratings.analysis/A-report.cleaned.csv", fileEncoding = "UTF-8")
+# ratings.a <- tbl_df(ratings.b)
+# 
+# ratings.b <- read.csv("~/Dropbox/心智科學腦影像計畫子計畫3/實驗.程式.資料/scripts.report/ratings.analysis/B-report.cleaned.csv", fileEncoding = "UTF-8")
+# ratings.b <- tbl_df(ratings.b)
+
+## Sean's analysis
+mcomp = read.csv("merged.comp.csv", header=T, fileEncoding = "UTF-8")
+mfreq = read.csv("merged.freq.csv", header=T, fileEncoding = "UTF-8")
+
+
+mcomp.tbl <- tbl_df(mcomp)
+mcomp.tbl
+mfreq.tbl <- tbl_df(mfreq)
+mfreq.tbl
+
+mcomp$avg = apply(mcomp[3:ncol(mcomp)], 1, mean)
+mcomp$std = apply(mcomp[3:ncol(mcomp)], 1, sd)
+mfreq$avg = apply(mfreq[3:ncol(mfreq)], 1, mean)
+mfreq$std = apply(mfreq[3:ncol(mfreq)], 1, sd)
+
+mcomp_stat = select(mcomp, qie, comp_type = type, comp_avg = avg, comp_std = std)
+mfreq_stat = select(mfreq, qie, freq_type = type, freq_avg = avg, freq_std = std)
+
+qierate = full_join(mcomp_stat, mfreq_stat, by=c("qie" = "qie"))
+
+qie_grp = qierate %>% 
+  group_by(comp_type) %>% 
+  summarise(grp_comp = mean(comp_avg), 
+            grp_comp_std = sd(comp_avg), 
+            grp_freq = mean(freq_avg), 
+            grp_freq_std = sd(freq_avg))
+
+#p<- plot_ly(qierate, 
+#        x = ~freq_avg, y = ~comp_avg, text=~iconv(qie, "cp950", "utf8"), 
+#        color=~comp_type, marker = list(size=12), type="scatter", mode="markers") %>% 
+#        layout(xaxis = list(range(1,7),title = "Rated-Freq by-sbj avg"), 
+#              yaxis = list(range(1,7), title = "Rated-Comp by-sbj avg"))
+#htmlwidgets::saveWidget(as.widget(p), "wp.html")
+```
+
+
+
+  
+---
+## 實驗：Ratings analysis
+  
+<iframe width="520" height="415" src="assets/widgets/wp.html" frameborder="0" allowfullscreen></iframe>
+  
+  
+  
+  
+--- 
+## 實驗：Ratings analysis (diverging stacked bar charts) 
+  
+  
+<img src="images/oc.png" alt="Drawing" style="width: 400px;"/>
+<img src="images/od.png" alt="Drawing" style="width: 400px;"/>
+  
+
+## Outline
+<!--  ========================================================   -->
+1. Background
+2. Lexicology with the BIG DATA
+3. Measuring Lexical Aging as an Example
+4. __`Conclusion`__
+
+
+
+---
+## Conclusion
+
+> This is a good time to become a corpus linguist.
+
+- Reinventing education of linguistics
+- Corpus as Social Sensor 
+- 大智移雲時代脈絡下的語料庫創新
+
+
+---
+## Chatbot 終將一統江湖？
+
+
+<img src="images/symbol.png" alt="Drawing" style="width: 400px;"/>
+  
+
+
+---
+# Thank you
+
+<img src="images/thanks.png" alt="Drawing" style="width: 400px;"/>
+
+
+
+
+---
+## Reference
+[1] J. Pannebaker. 2011. The secret life of pronouns: what our words say about us. Bloomsbury Press.
+[2] Candlin and Hall (eds.) 2012. Corpora and language education. Lynne Flowerdew.
+[3] Wang S.H. (2017) Text Analysis of Corpus Linguistics in a Post-concordancer Era. In: Wu TT., Gennari R., Huang YM., Xie H., Cao Y. (eds) Emerging Technologies for Education. SETE 2016. Lecture Notes in Computer Science, vol 10108. Springer. 
