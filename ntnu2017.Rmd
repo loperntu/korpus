@@ -46,13 +46,14 @@ knit        : slidify::knit2slides
 ---
 ## 時代背景
 
-sensor, social sensor in the networked age
+- Sensor, social sensor in the networked age (工業 4.0)
 <img src="images/sensor.jpeg" alt="Drawing" style="width: 200px;"/>
 - Revisiting the definition of corpus (Become fully electronic in 1989)
 
 
 ---
-## History of Corpus Linguistics 不再有趣的辯論
+## History of Corpus Linguistics 
+### 不再有趣的辯論
 
 - Chomskyan linguistics and corpus linguistics: Introspection and intuition vs attested instances of authentic language
 
@@ -80,10 +81,8 @@ Long-established definition/applications of corpus
 
 - corpus-based, corpus-driven, ...
 - appropriate corpus size, representativeness, (genre) balance
-  - Brown corpus 220,000; BYC
-  - (Biber 1990): 
    
-> Sinclair (1991, 2004a) emphasises that a corpus should be large and that it ‘typically contains many millions of words’ such that the more likely it is to give an adequate representation of the language and suf- ficiently multiple occurrences of the items under investigation. In a similar vein, Sampson (2001: 6) states the need for a ‘sizeable sample of real-life usage’ to ensure there exists adequate evidence for generating or testing hypotheses about the language.
+> The need for a ‘sizeable sample of real-life usage’ to ensure there exists adequate evidence for generating or testing hypotheses about the language.Sampson (2001: 6) 
 
 
 ---
@@ -96,7 +95,7 @@ Long-established definition/applications of corpus
 
 ---
 ## 請放下語言學家的尊嚴
-
+### 手中有了錘子，看什麼都是釘子
 
 <img src="images/canyou.jpg" alt="Drawing" style="width: 300px;"/>
 
@@ -106,11 +105,13 @@ Long-established definition/applications of corpus
 ## Corpus Tools 
 ### Concordance (是怎麼玩壞語料庫語言學的)
 <img src="images/copens.png" alt="Drawing" style="width: 400px;"/>
-
+`妳會看幾頁的 google search results`?
 
 ---
 ## Corpus Tools 
 ### word and ngram frequency
+
+<img src="images/word.png" alt="Drawing" style="width: 300px;"/>
 
 
 
@@ -119,6 +120,9 @@ Long-established definition/applications of corpus
 ## Corpus Tools 
 ### colligation and collocation (network)
 (`GraphColl`, Brezina et. al. 2015)
+
+<img src="images/graphcoll.png" alt="Drawing" style="width: 300px;"/>
+
 
 
 ---
@@ -138,8 +142,7 @@ Long-established definition/applications of corpus
 
 ---
 ## Corpus Tools + Natural Language Processing
-
-Corpus Linguistics in a Post-concordancer Era [Wang, 2017].
+### Corpus Linguistics in a Post-concordancer Era [Wang, 2017].
 
 - it ignores the sentence boundaries in texts and, as a result, the researchers miss the opportunities to automatically analyze the texts at sentence level; 
 - the tool also provides little information about the syntactic functions of the words in the corpora, which can be revealed through more recent tools such as Stanford parsers (http://nlp.stanford.edu:8080/parser/) and SyntaxNet. 
@@ -162,9 +165,8 @@ Corpus Linguistics in a Post-concordancer Era [Wang, 2017].
 - due to these technological restrictions, corpus investigations over-emphasise single word forms and collocations at the expense of more discourse-based features of language.
 
 
-Stubbs illustrates how inter-collocations of the verbs ACCOST and LURK examined in the Cobuild corpus build up a network showing common ways of talking about threats to public safety, especially in the mass media (p. 205): Accosted – in the street – by a stranger – lurk beneath the surface – hidden beneath the surface – danger – warning
 
-
+---
 ## Outline
 <!--  ========================================================   -->
 1. Background
@@ -178,10 +180,11 @@ Stubbs illustrates how inter-collocations of the verbs ACCOST and LURK examined 
 ---
 ## How social media is changing Language/Corpus linguistics/NLP
 
-- fragment > MWE
-- streaming big > seg myth / gobal statistics illusion
+- Novelty, Brevity
+- Multiword expression (**MWE**), Fragments
+- Lexical stabilization
 
-<img src="images/socialmedia.png" alt="Drawing" style="width: 500px;"/>
+<img src="images/socialmedia.png" alt="Drawing" style="width: 300px;"/>
 
 
 ---
@@ -221,8 +224,8 @@ http://lopen.linguistics.ntu.edu.tw/pttcorp
 ---
 ## Challenges
 
-- Word segmentation 
-- Multi-level annotation
+- Word segmentation (Big data, Big noisy data) 
+- Multi-level annotation 
 - Social and historical **de-contextualized**
 
 > A corpus presents decontextualised language data divorced from its original context. (Aston 1995; Widdowson 1998)
@@ -258,8 +261,8 @@ http://lopen.linguistics.ntu.edu.tw/pttcorp
 ## 更有語言學味道的議題
 
 - Lexical bundles (Hus and Hsieh, 2017)
-- QIEs
-- Fragments
+- 四字格 Quardraic Idiomatic Expresions (QIE). 我不想聽,最好是厚
+- Generalized fragments (pattern-grammar alike)
 
 
 
@@ -279,27 +282,19 @@ http://lopen.linguistics.ntu.edu.tw/diffseg/
 ---
 ## Annotation
 
-
----
-## anno.solution
-
-- Associating a label (metadata) with specific content in a document.
-- Annotation can be everywhere: 
-  - Image labeling
-  - Sarcasticm
-  - Event 
-
-
----
-## Annotation
-- annotated corpus needs to be consistent to 
-  - train/test an algorithm
-  - gain solid insights 
+### `標記是語言學家的當代逆襲`
+  
+  - Associating a label (metadata) with specific content in a document.
+  - Annotation can be everywhere: 
+    - Image labeling
+    - Sarcasticm
+    -  Event 
+  - can probably tackle with `null elements` (Tao, 2017)?
 
 
 ---
-## Lopotator
-
+## Lopotator 
+### 我們需要彈性的工具
 <img src="images/lopotator.png" alt="Drawing" style="width: 500px;"/>
 
 
@@ -316,33 +311,21 @@ http://lopen.linguistics.ntu.edu.tw/diffseg/
   
 
 
-
-
-
-
 ---
 ## 社會性與歷史性
 - social network and lexical network (and brain network)
-- diachronic word embeddings
-
+- diachronic word embeddings and thesarus
 
 <img src="images/embeddings.png" alt="Drawing" style="width: 600px;"/>
 
 
 
-
-
 ---
-## 社會
-### 言談的舞蹈與音樂性
+## 從言談的舞蹈與音樂性到情緒分析
 
 > How can we know the dancer from the dance” (William Butler Yeats)
 
-verbal mimicking
-
-
-
-
+- verbal mimicking
 
 
 ---
@@ -354,23 +337,18 @@ verbal mimicking
 <img src="images/corpus4fun.png" alt="Drawing" style="width: 600px;"/>
 
 
-
 ---
 ## Diachronic character/word embeddings
   
 <iframe width="800" height="515" src="http://140.112.147.121:8288" frameborder="0" allowfullscreen></iframe>
   
 
-  
 ---
 ## Outline
-<!--  ========================================================   -->
 1. Background
 2. Social Media and Corpus Linguistics
 3. Challenges
 4. __`Conclusion`__
-
-
 
 
 ---
